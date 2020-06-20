@@ -1,0 +1,127 @@
+class Kelvin:     # Changing from Kelvin to other threee
+    def __init__(self, temprature):
+        self._temprature = temprature
+    
+    def temprature(self):
+        current_temprature = self._temprature 
+        print(f"Temprature in Kelvin: {current_temprature} K ")
+    
+    def changing_from_ktof(self):     # kelvin to farenheit
+        current_temprature = self._temprature
+        Farenheit = current_temprature - 273.15 
+        Farenheit_1 = (Farenheit * 9) / 5
+        Farenheit_2 = Farenheit_1 + 32
+        print(f"Temprature in Farenheit : {Farenheit_2} F")
+    
+    def changing_from_ktoc(self):     # kelvin to celsius
+        current_temprature = self._temprature
+        celsius = current_temprature - 273.15
+        print(f"Temprature in Celsius : {celsius} C")
+    
+    def changing_from_ktor(self):     # Kelvin to Rankie
+        current_temprature = self._temprature
+        rankie = (current_temprature * 9) / 5  
+        print(f"Temprature in Rankie : {rankie} R")
+        
+
+       
+def main():
+    user_input = int(input("Enter temprature: "))
+    kel = Kelvin(user_input)
+    kel.temprature()
+    kel.changing_from_ktof()
+    kel.changing_from_ktoc()
+    kel.changing_from_ktor()
+#main()
+
+
+class Celsius:
+    def __init__(self, temprature):
+        self._temprature = temprature
+    
+    def temprature(self):
+        current_temprature = self._temprature 
+        print(f"Temprature in Celsius: {current_temprature} C ")  
+    
+    def changing_from_ctk(self):          # Celsius to Kelvin
+        current_temprature = self._temprature
+        kelvin = current_temprature + 273.15
+        print(f"Temprature in Kelvin : {kelvin} K")
+    
+    def changing_from_ctof(self):         # Celsius to Farenheit
+        current_temprature = self._temprature 
+        farenheit =  (current_temprature * 9) / 5
+        farenheit_1 = farenheit + 32
+        print(f"Temprature in Farenheit : {farenheit_1} F")
+    
+    def changing_from_ctor(self):         # Celsius to Rankie
+        current_temprature = self._temprature
+        rankie =  current_temprature + 273.15
+        rankie_1  = (rankie * 9) / 5
+        print(f"Temprature in Rankie : {rankie_1} R")
+              
+
+class Farenheit:
+    def __init__(self, temprature):
+        self._temprature = temprature
+    
+    def temprature(self):
+        current_temprature = self._temprature 
+        print(f"Temprature in Farenheit: {current_temprature} F ")
+    
+    def changing_from_ftoc(self):         # Farenheit to Celsius
+        current_temprature = self._temprature
+        celsius_1  = current_temprature - 32
+        celsius = (celsius * 5) / 9
+        print(f"Temprature in Celsius : {celsius} C")
+    
+    def changing_from_ftok(self):         # Farenehit to Kelvin
+        current_temprature = self._temprature
+        kelvin_1 = current_temprature - 32
+        kelvin_2 = (kelvin_1 * 5) / 9 
+        kelvin   = kelvin_2 + 273.15
+        print(f"Temprature in Kelvin : {kelvin} K")
+        
+    def changing_from_ftor(self):         # Farenheit to Rankie
+        current_temprature = self._temprature
+        rankie = current_temprature + 459.67
+        print(f"Temprature in Rankie : {rankie} R")
+          
+class Rankie:
+    def __init__(self, temprature):
+        self._temprature = temprature
+    
+    def temprature(self):
+        current_temprature = self._temprature 
+        print(f"Temprature in Rankie: {current_temprature} R ")
+    
+    def changing_from_rtok(self):         # Rankie to Kelvin
+        current_temprature = self._temprature
+        kelvin = (current_temprature * 5) / 9
+        print(f"Temprature in Kelvin : {kelvin} K")
+     
+    def changing_from_rtoc(self):         # Rankie to Celsius
+        current_temprature = self._temprature
+        celsius_1 = (current_temprature * 5) / 9
+        celsius = celsius_1 - 273.15
+        print(f"Temprature in Celsius : {celsius} C")
+    
+    def changing_from_rtof(self):         # Rankie to Farenheit
+        current_temprature = self._temprature
+        farenheit_1 =  current_temprature - 459.67
+        print(f"Temprature in Farenheit: {farenheit_1} F ")
+
+def main():     # Main function for Rankie
+    user_input = int(input("Enter temprature: "))
+    rank = Rankie(user_input)
+    rank.changing_from_rtok()
+    rank.changing_from_rtoc()
+    rank.changing_from_rtof()
+main()
+        
+        
+        
+        
+        
+        
+    
